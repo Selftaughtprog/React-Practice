@@ -9,7 +9,10 @@ function App() {
 
   const addValue = () => {
     // counter = counter + 1;
-    setCounter(counter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    // setCounter accepts a callback function that will take the last value of the counter and add 1 to it.
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
     console.log("clicked", counter);
   }
 
